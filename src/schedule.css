@@ -1,0 +1,100 @@
+.wedding-schedule {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 64px 24px 72px;
+  color: #37382f;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.wedding-schedule__label {
+  margin: 0 0 18px;
+  color: #5e6550;
+  font: 11px Georgia, serif;
+  letter-spacing: .25em;
+}
+
+.wedding-schedule h2 {
+  margin: 0 0 16px;
+  font-size: clamp(21px, 5.5vw, 27px);
+  font-weight: 400;
+}
+
+.wedding-schedule time { font-size: 15px; }
+
+.wedding-schedule table {
+  width: min(100%, 340px);
+  margin: 28px auto 0;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.wedding-schedule caption {
+  padding: 16px 0;
+  border-top: 1px solid #dfdfd2;
+  font-size: 15px;
+}
+
+.wedding-schedule th { height: 34px; font-weight: 400; }
+.wedding-schedule td { height: 40px; }
+.wedding-schedule tr > :first-child { color: #92594b; }
+.wedding-schedule tbody tr:last-child { border-bottom: 1px solid #dfdfd2; }
+
+.wedding-schedule__marked {
+  display: inline-grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: #5e6550;
+  color: #fff;
+}
+
+.wedding-schedule__clock {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 290px;
+  margin: 28px auto 0;
+}
+
+.wedding-schedule__unit {
+  position: relative;
+  display: grid;
+  gap: 6px;
+  font-size: 11px;
+  color: #5e6550;
+}
+
+.wedding-schedule__unit strong {
+  color: #37382f;
+  font: 400 clamp(22px, 7vw, 30px) Georgia, serif;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.wedding-schedule__unit + .wedding-schedule__unit::before {
+  position: absolute;
+  inset: auto auto 4px 0;
+  content: ':';
+  transform: translateX(-50%);
+}
+
+.wedding-schedule__countdown {
+  margin: 14px 0 18px;
+  color: #5e6550;
+  font-size: 14px;
+}
+
+.wedding-schedule__save {
+  display: inline-grid;
+  min-height: 44px;
+  padding: 0 20px;
+  place-items: center;
+  border: 1px solid #b8bdad;
+  border-radius: 3px;
+  color: #37382f;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.wedding-schedule__save:focus-visible { outline: 2px solid #5e6550; outline-offset: 3px; }

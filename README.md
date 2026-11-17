@@ -18,4 +18,4 @@ npm run dev
 
 `npm ci`는 `package-lock.json`에 기록된 버전으로 설치합니다. `npm run dev`를 실행한 뒤 터미널에 표시되는 `/wedding-invitation/` 주소를 엽니다. `npm run build`는 배포 파일을 `dist/`에 만들고, `npm run preview`는 그 결과를 로컬에서 제공합니다.
 
-개발 서버 주소 뒤에 `?preview=cover`를 붙이면 청첩장 표지와 초대 문구를 볼 수 있습니다. 일반 주소에는 준비 화면이 표시되며, 청첩장 미리보기는 배포용 빌드에 포함되지 않습니다.
+개발 서버 주소 뒤에 `?preview=cover`를 붙이면 청첩장 표지, 초대 문구, 예식 일정을 볼 수 있습니다. 일반 주소에는 준비 화면이 표시되며, 청첩장 미리보기는 배포용 빌드에 포함되지 않습니다.

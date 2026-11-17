@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invitation//Seunghun and Jieun//KO
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:20270306-seunghun-jieun@wedding-invitation
+DTSTAMP:20261117T000000Z
+DTSTART:20270306T040000Z
+SUMMARY:이승훈 · 이지은 결혼식
+LOCATION:서울특별시 서초구 서초중앙로 14 더 화이트 베일
+  4층 W Hall
+END:VEVENT
+END:VCALENDAR
