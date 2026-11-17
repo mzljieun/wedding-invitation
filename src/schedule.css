@@ -1,15 +1,17 @@
 .wedding-schedule {
   max-width: 520px;
   margin: 0 auto;
-  padding: 64px 24px 72px;
-  color: #37382f;
+  padding: 58px 24px 62px;
+  border-top: 1px solid var(--wedding-rule);
+  background: var(--wedding-paper);
+  color: var(--wedding-ink);
   text-align: center;
   word-break: keep-all;
 }
 
 .wedding-schedule__label {
-  margin: 0 0 18px;
-  color: #5e6550;
+  margin: 0 0 14px;
+  color: var(--wedding-muted);
   font: 11px Georgia, serif;
   letter-spacing: .25em;
 }
@@ -17,7 +19,7 @@
 .wedding-schedule h2 {
   margin: 0 0 16px;
   font-size: clamp(21px, 5.5vw, 27px);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .wedding-schedule time { font-size: 15px; }
@@ -32,14 +34,14 @@
 
 .wedding-schedule caption {
   padding: 16px 0;
-  border-top: 1px solid #dfdfd2;
+  border-top: 1px solid var(--wedding-rule);
   font-size: 15px;
 }
 
 .wedding-schedule th { height: 34px; font-weight: 400; }
 .wedding-schedule td { height: 40px; }
 .wedding-schedule tr > :first-child { color: #92594b; }
-.wedding-schedule tbody tr:last-child { border-bottom: 1px solid #dfdfd2; }
+.wedding-schedule tbody tr:last-child { border-bottom: 1px solid var(--wedding-rule); }
 
 .wedding-schedule__marked {
   display: inline-grid;
@@ -47,8 +49,8 @@
   height: 32px;
   place-items: center;
   border-radius: 50%;
-  background: #5e6550;
-  color: #fff;
+  background: var(--wedding-ink);
+  color: var(--wedding-paper);
 }
 
 .wedding-schedule__clock {
@@ -63,11 +65,11 @@
   display: grid;
   gap: 6px;
   font-size: 11px;
-  color: #5e6550;
+  color: var(--wedding-muted);
 }
 
 .wedding-schedule__unit strong {
-  color: #37382f;
+  color: var(--wedding-ink);
   font: 400 clamp(22px, 7vw, 30px) Georgia, serif;
   font-variant-numeric: lining-nums tabular-nums;
 }
@@ -81,7 +83,7 @@
 
 .wedding-schedule__countdown {
   margin: 14px 0 18px;
-  color: #5e6550;
+  color: var(--wedding-muted);
   font-size: 14px;
 }
 
@@ -90,11 +92,12 @@
   min-height: 44px;
   padding: 0 20px;
   place-items: center;
-  border: 1px solid #b8bdad;
-  border-radius: 3px;
-  color: #37382f;
+  border: 1px solid #ccd2c2;
+  border-radius: 12px;
+  background: #fffefa;
+  color: var(--wedding-ink);
   font-size: 14px;
   text-decoration: none;
 }
 
-.wedding-schedule__save:focus-visible { outline: 2px solid #5e6550; outline-offset: 3px; }
+.wedding-schedule__save:focus-visible { outline: 2px solid var(--wedding-ink); outline-offset: 3px; }

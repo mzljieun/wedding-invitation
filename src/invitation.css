@@ -1,30 +1,31 @@
 .wedding-invitation {
   max-width: 520px;
   margin: 0 auto;
-  padding: 64px 24px 72px;
-  border-top: 1px solid #dfdfd2;
-  background: #f5f3eb;
-  color: #37382f;
-  text-align: center;
+  padding: 62px clamp(24px, 8vw, 46px) 72px;
+  background: #fcf7ec;
+  color: #29443a;
+  text-align: left;
   word-break: keep-all;
 }
 
 .wedding-invitation__label {
   margin: 0 0 18px;
-  color: #5e6550;
+  color: #4f6356;
   font: 11px Georgia, serif;
   letter-spacing: .25em;
 }
 
 .wedding-invitation h2 {
   margin: 0 0 26px;
+  scroll-margin-block-start: 52px;
   font-size: clamp(21px, 5.5vw, 27px);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .wedding-invitation__message {
   font-size: 15px;
   line-height: 1.95;
+  color: #4b5144;
 }
 
 .wedding-invitation__message p {
@@ -44,19 +45,20 @@
   display: block;
   width: 36px;
   height: 1px;
-  margin: 0 auto 23px;
+  margin: 0 0 23px;
   background: #cdd0c1;
   content: '';
 }
 
 .wedding-invitation__contact {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
   justify-content: center;
   gap: 8px;
   min-width: 172px;
   min-height: 46px;
-  margin-top: 20px;
+  margin: 28px auto 0;
   border: 1px solid #ccd2c2;
   border-radius: 12px;
   background: #fffefa;

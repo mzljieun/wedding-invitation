@@ -1,17 +1,17 @@
 .wedding-gallery {
   max-width: 520px;
   margin: 0 auto;
-  padding: 64px 24px 72px;
-  border-top: 1px solid #dfdfd2;
-  background: #f5f3eb;
-  color: #37382f;
+  padding: 58px 24px 62px;
+  border-top: 1px solid var(--wedding-rule);
+  background: var(--wedding-paper);
+  color: var(--wedding-ink);
   text-align: center;
   word-break: keep-all;
 }
 
 .wedding-gallery__label {
-  margin: 0 0 18px;
-  color: #5e6550;
+  margin: 0 0 14px;
+  color: var(--wedding-muted);
   font: 11px Georgia, serif;
   letter-spacing: .25em;
 }
@@ -19,12 +19,12 @@
 .wedding-gallery h2 {
   margin: 0 0 16px;
   font-size: clamp(21px, 5.5vw, 27px);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .wedding-gallery > p:not(.wedding-gallery__label) {
   font-size: 13px;
-  color: #5e6550;
+  color: var(--wedding-muted);
 }
 
 .wedding-gallery__slider {
@@ -65,7 +65,7 @@
   overflow: hidden;
   border: 0;
   border-radius: 9px;
-  background: #e7e4da;
+  background: var(--wedding-photo-mat);
   cursor: zoom-in;
 }
 
@@ -77,17 +77,22 @@
 }
 
 .wedding-gallery__track img.wedding-gallery__landscape {
-  background: #e4e0d6;
+  background: var(--wedding-photo-mat);
   object-fit: contain;
 }
 
-.wedding-gallery__counter { margin: 14px 0 20px; letter-spacing: .08em; }
-.wedding-gallery__counter strong { color: #405838; }
+.wedding-gallery__counter {
+  margin: 17px 0 10px;
+  font-family: Georgia, serif;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .16em;
+}
+.wedding-gallery__counter strong { color: var(--wedding-ink); }
 
 .wedding-gallery__slider .wedding-gallery__arrow {
-  background: #fff;
-  color: #37382f;
-  box-shadow: 0 2px 10px rgb(35 36 30 / .16);
+  background: #fffaf0;
+  color: var(--wedding-ink);
+  box-shadow: 0 2px 8px rgb(35 36 30 / .12);
 }
 
 .wedding-gallery__slider .wedding-gallery__arrow:disabled {
