@@ -1,0 +1,53 @@
+.wedding-cover {
+  max-width: 520px;
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: clamp(52px, 10svh, 96px) 24px 56px;
+  text-align: center;
+  color: #37382f;
+}
+
+.wedding-cover__label,
+.wedding-cover figcaption {
+  color: #5e6550;
+  font: 11px Georgia, serif;
+  letter-spacing: .25em;
+}
+
+.wedding-cover h1 {
+  margin: 14px 0 30px;
+  font-size: clamp(26px, 7vw, 40px);
+  line-height: 1.3;
+}
+
+.wedding-cover h1 span {
+  margin: 0 .2em;
+  color: #637052;
+  font: italic .75em Georgia, serif;
+}
+
+.wedding-cover figure {
+  margin: 0;
+}
+
+.wedding-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.wedding-cover figcaption {
+  padding: 12px 0 0;
+}
+
+.wedding-cover__date {
+  margin: 28px 0 7px;
+  font-size: 15px;
+  word-break: keep-all;
+}
+
+.wedding-cover__venue {
+  margin: 0;
+  font-size: 14px;
+  color: #5e6550;
+}
