@@ -36,3 +36,92 @@
   color: #5e6550;
   font-size: 14px;
 }
+
+.wedding-invitation__signature p { margin: 10px 0; }
+.wedding-invitation__signature span { color: #666b5c; }
+.wedding-invitation__signature strong { margin-left: 3px; color: #37382f; }
+.wedding-invitation__signature::before {
+  display: block;
+  width: 36px;
+  height: 1px;
+  margin: 0 auto 23px;
+  background: #cdd0c1;
+  content: '';
+}
+
+.wedding-invitation__contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 172px;
+  min-height: 46px;
+  margin-top: 20px;
+  border: 1px solid #ccd2c2;
+  border-radius: 12px;
+  background: #fffefa;
+  color: #49583e;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+html:has(.wedding-contacts[open]) { overflow: hidden; }
+.wedding-contacts {
+  box-sizing: border-box;
+  width: min(calc(100% - 24px), 425px);
+  max-height: calc(100dvh - 24px);
+  padding: 15px clamp(14px, 4vw, 24px) 20px;
+  border: 1px solid #dce2d6;
+  border-radius: 16px;
+  background: #f3f5ef;
+  color: #37382f;
+  text-align: left;
+}
+.wedding-contacts::backdrop { background: rgb(27 30 24 / .45); }
+.wedding-contacts header {
+  position: relative;
+  display: grid;
+  min-height: 44px;
+  place-items: center;
+}
+.wedding-contacts header h3 { margin: 0; font-size: 17px; }
+.wedding-contacts header button {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font-size: 22px;
+  cursor: pointer;
+}
+.wedding-contacts__group { margin-top: 18px; }
+.wedding-contacts h4 { margin: 0; padding-bottom: 9px; border-bottom: 1px solid #d5dacd; font-size: 13px; }
+.wedding-contacts ul { margin: 3px 0 0; padding: 0; list-style: none; }
+.wedding-contacts li {
+  display: grid;
+  grid-template-columns: 3em minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 0;
+  font-size: 13px;
+}
+.wedding-contacts__role, .wedding-contacts__note { color: #5e6550; }
+.wedding-contacts__note { margin: 14px 0 0; font-size: 12px; }
+.wedding-contacts__actions { display: flex; gap: 6px; }
+.wedding-contacts__actions :is(a, button) {
+  box-sizing: border-box;
+  display: grid;
+  width: 46px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid #cdd3c3;
+  border-radius: 999px;
+  background: #fffefa;
+  color: #49583e;
+}
+.wedding-contacts__actions button:disabled { opacity: .5; }
+.wedding-invitation :focus-visible { outline: 2px solid #5e6550; outline-offset: 2px; }

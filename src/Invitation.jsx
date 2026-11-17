@@ -1,3 +1,4 @@
+import WeddingContacts, { families } from './WeddingContacts.jsx';
 import './invitation.css';
 
 export default function Invitation() {
@@ -9,9 +10,15 @@ export default function Invitation() {
         <p>서로의 평범한 하루를 아껴 주며<br />저희 두 사람이 결혼합니다.</p>
         <p>함께 걸어갈 첫날에 오셔서<br />따뜻한 축복을 나누어 주시면 감사하겠습니다.</p>
       </div>
-      <p className="wedding-invitation__signature">
-        이승훈 <span aria-hidden="true">·</span>{' '}이지은 드림
-      </p>
+      <div className="wedding-invitation__signature">
+        {families.map(({ side, relation, couple, parents }) => (
+          <p key={side}>
+            {parents.map(({ role, name }) => name || role).join(' · ')}
+            <span>의 {relation}</span> <strong>{couple.name}</strong>
+          </p>
+        ))}
+      </div>
+      <WeddingContacts />
     </section>
   );
 }
