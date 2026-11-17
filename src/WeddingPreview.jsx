@@ -1,6 +1,7 @@
 import Cover from './Cover.jsx';
 import Invitation from './Invitation.jsx';
 import WeddingSchedule from './WeddingSchedule.jsx';
+import WeddingGallery from './WeddingGallery.jsx';
 
 export default function WeddingPreview() {
   return (
@@ -8,6 +9,7 @@ export default function WeddingPreview() {
       <Cover />
       <Invitation />
       <WeddingSchedule />
+      <WeddingGallery />
     </main>
   );
 }

@@ -1,0 +1,200 @@
+.wedding-gallery {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 64px 24px 72px;
+  border-top: 1px solid #dfdfd2;
+  background: #f5f3eb;
+  color: #37382f;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.wedding-gallery__label {
+  margin: 0 0 18px;
+  color: #5e6550;
+  font: 11px Georgia, serif;
+  letter-spacing: .25em;
+}
+
+.wedding-gallery h2 {
+  margin: 0 0 16px;
+  font-size: clamp(21px, 5.5vw, 27px);
+  font-weight: 400;
+}
+
+.wedding-gallery > p:not(.wedding-gallery__label) {
+  font-size: 13px;
+  color: #5e6550;
+}
+
+.wedding-gallery__slider {
+  position: relative;
+  margin: 26px -24px 0;
+}
+
+.wedding-gallery__track {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  list-style: none;
+  user-select: none;
+}
+
+.wedding-gallery__track::-webkit-scrollbar { display: none; }
+.wedding-gallery__track.is-dragging { scroll-snap-type: none; }
+.wedding-gallery__track.is-dragging button { cursor: grabbing; }
+
+.wedding-gallery__track li {
+  flex: 0 0 70%;
+  scroll-snap-align: center;
+}
+
+.wedding-gallery__track li:first-child { margin-inline-start: 15%; }
+.wedding-gallery__track li:last-child { margin-inline-end: 15%; }
+
+.wedding-gallery__track button {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 9px;
+  background: #e7e4da;
+  cursor: zoom-in;
+}
+
+.wedding-gallery__track img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wedding-gallery__track img.wedding-gallery__landscape {
+  background: #e4e0d6;
+  object-fit: contain;
+}
+
+.wedding-gallery__counter { margin: 14px 0 20px; letter-spacing: .08em; }
+.wedding-gallery__counter strong { color: #405838; }
+
+.wedding-gallery__slider .wedding-gallery__arrow {
+  background: #fff;
+  color: #37382f;
+  box-shadow: 0 2px 10px rgb(35 36 30 / .16);
+}
+
+.wedding-gallery__slider .wedding-gallery__arrow:disabled {
+  opacity: .45;
+  cursor: default;
+}
+
+.wedding-gallery button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.wedding-gallery__track button:focus-visible { outline-offset: -3px; }
+
+.wedding-gallery__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0 0 3px;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(35 36 30 / .78);
+  color: #fff;
+  font: 27px/1 system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.wedding-gallery__arrow--previous { left: 8px; }
+.wedding-gallery__arrow--next { right: 8px; }
+
+html:has(.wedding-gallery__dialog[open]) { overflow: hidden; }
+
+.wedding-gallery__dialog {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.wedding-gallery__dialog::backdrop { background: #171814; }
+
+.wedding-gallery__dialog-photo {
+  position: absolute;
+  inset: 66px 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.wedding-gallery__dialog-photo img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 1100px);
+  max-height: calc(100dvh - 132px);
+  pointer-events: auto;
+}
+
+.wedding-gallery__dialog .wedding-gallery__arrow,
+.wedding-gallery__close {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / .28);
+  border-radius: 50%;
+  background: rgb(23 24 20 / .65);
+  color: #fff;
+  cursor: pointer;
+}
+
+.wedding-gallery__close {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+}
+
+.wedding-gallery__dialog button svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.wedding-gallery__position {
+  position: absolute;
+  inset: auto 0 max(22px, env(safe-area-inset-bottom));
+  color: #dddcd6;
+  font-size: 12px;
+  letter-spacing: .16em;
+  pointer-events: none;
+}
