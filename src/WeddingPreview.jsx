@@ -4,6 +4,7 @@ import WeddingSchedule from './WeddingSchedule.jsx';
 import WeddingGallery from './WeddingGallery.jsx';
 import WeddingLocation from './WeddingLocation.jsx';
 import WeddingGifts from './WeddingGifts.jsx';
+import WeddingFooter from './WeddingFooter.jsx';
 import './wedding-theme.css';
 
 export default function WeddingPreview() {
@@ -15,6 +16,7 @@ export default function WeddingPreview() {
       <WeddingGallery />
       <WeddingLocation />
       <WeddingGifts />
+      <WeddingFooter />
     </main>
   );
 }

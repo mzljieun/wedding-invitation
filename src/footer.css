@@ -1,0 +1,81 @@
+.wedding-footer {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 55px 24px 60px;
+  border-top: 1px solid var(--wedding-rule);
+  background: var(--wedding-paper);
+  color: var(--wedding-ink);
+  text-align: center;
+  word-break: keep-all;
+}
+
+.wedding-footer__mark { font: italic 30px Georgia, serif; color: var(--wedding-muted); }
+.wedding-footer__thanks { margin: 14px 0 8px; font-size: 15px; line-height: 1.7; }
+.wedding-footer__signature { margin: 0; font-size: 13px; color: var(--wedding-muted); }
+.wedding-footer__share, .wedding-footer__actions :is(a, button) {
+  display: inline-grid;
+  justify-items: center;
+  gap: 8px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wedding-footer__share { margin-top: 27px; padding: 0 8px; }
+.wedding-footer__icon {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e9ece3;
+  color: var(--wedding-ink);
+}
+.wedding-footer__icon--sms { background: #dce9d9; }
+
+.wedding-footer__dialog {
+  width: min(calc(100% - 24px), 380px);
+  max-height: calc(100dvh - 24px);
+  padding: 0 16px;
+  border: 1px solid var(--wedding-rule);
+  border-radius: 16px;
+  background: #fffefa;
+  color: var(--wedding-ink);
+}
+.wedding-footer__dialog::backdrop { background: rgb(27 30 24 / .45); }
+.wedding-footer__dialog header { position: relative; display: grid; min-height: 48px; place-items: center; border-bottom: 1px solid var(--wedding-rule); }
+.wedding-footer__dialog h2 { margin: 0; font-size: 16px; }
+.wedding-footer__dialog header button {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 21px;
+  cursor: pointer;
+}
+.wedding-footer__actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  max-width: 250px;
+  margin: 18px auto 20px;
+}
+.wedding-footer__url { display: grid; gap: 5px; text-align: left; color: var(--wedding-muted); font-size: 12px; }
+.wedding-footer__url input { width: 100%; min-height: 40px; padding: 7px; border: 1px solid var(--wedding-rule); border-radius: 6px; background: var(--wedding-paper); color: var(--wedding-ink); font: inherit; }
+.wedding-footer__status { margin: 8px 0 16px; font-size: 12px; line-height: 1.4; }
+.wedding-footer__dialog:not(.has-fallback) .wedding-footer__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.wedding-footer :focus-visible { outline: 2px solid var(--wedding-ink); outline-offset: 2px; }
