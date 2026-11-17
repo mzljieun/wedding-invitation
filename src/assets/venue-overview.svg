@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230">
+  <rect width="540" height="230" fill="#eaece2"/>
+  <g fill="#e1e5d9" stroke="#d6dacf">
+    <path d="M0 0h220v58H0zm268 0h272v58H268zM0 99h218v91H0zm268 0h272v91H268z"/>
+    <rect x="45" y="111" width="114" height="66" rx="8" fill="#d3dfc9"/>
+  </g>
+  <g fill="none" stroke="#fffdf6">
+    <path d="M-10 78h560M242-10v250M-10 207h560" stroke-width="28"/>
+    <path d="M124 0v79m297 0v129m-362 0v27m394-235v78" stroke-width="12"/>
+  </g>
+  <path d="M243 91v67" fill="none" stroke="#718465" stroke-width="2" stroke-dasharray="3 5"/>
+  <g font-family="sans-serif" font-size="13" fill="#50594b">
+    <text x="14" y="83">남부터미널역</text>
+    <text x="14" y="212">남부순환로</text>
+    <text x="74" y="151">예술의전당 방면</text>
+    <text x="249" y="65">4번 출구</text>
+    <text x="274" y="169">전용 주차타워</text>
+  </g>
+  <rect x="233" y="71" width="19" height="17" rx="4" fill="#a55225"/>
+  <text x="242.5" y="83" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fff">4</text>
+  <circle cx="248" cy="163" r="5" fill="#718465"/>
+  <rect x="270" y="103" width="133" height="34" rx="17" fill="#fffdf8" stroke="#c3cbb9"/>
+  <path d="M270 117a10 10 0 1 0-20 0c0 6 10 16 10 16s10-10 10-16Z" fill="#526648"/>
+  <circle cx="260" cy="116" r="3" fill="#fff"/>
+  <text x="283" y="125" font-family="sans-serif" font-size="15" font-weight="bold" fill="#354631">더 화이트 베일</text>
+</svg>
