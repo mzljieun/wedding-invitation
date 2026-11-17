@@ -1,0 +1,101 @@
+.wedding-gifts {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 64px 24px 72px;
+  border-top: 1px solid #dfdfd2;
+  background: #f5f3eb;
+  color: #37382f;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.wedding-gifts__label {
+  margin: 0 0 18px;
+  color: #5e6550;
+  font: 11px Georgia, serif;
+  letter-spacing: .25em;
+}
+
+.wedding-gifts h2 { margin: 0 0 20px; font-size: clamp(21px, 5.5vw, 27px); font-weight: 400; }
+.wedding-gifts__message { margin: 0 0 28px; font-size: 15px; line-height: 1.9; }
+.wedding-gifts__groups { display: grid; gap: 10px; text-align: left; }
+.wedding-gifts details { border: 1px solid #d9dccf; border-radius: 10px; background: #fffefa; }
+
+.wedding-gifts summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 8px 15px;
+  color: #49583e;
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.wedding-gifts summary::-webkit-details-marker { display: none; }
+.wedding-gifts summary span {
+  width: 7px;
+  height: 7px;
+  margin-right: 3px;
+  border: solid currentColor;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+.wedding-gifts details[open] summary span { transform: rotate(225deg); }
+.wedding-gifts :focus-visible { outline: 2px solid #5e6550; outline-offset: 2px; }
+.wedding-gifts__pending { margin: 0; padding: 13px 15px; border-top: 1px solid #e8e9e0; color: #5e6550; font-size: 13px; }
+.wedding-gifts__accounts { margin: 0; padding: 0; list-style: none; }
+.wedding-gifts__accounts li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 15px;
+  border-top: 1px solid #e8e9e0;
+  font-size: 13px;
+}
+.wedding-gifts__accounts p { margin: 4px 0 0; overflow-wrap: anywhere; }
+.wedding-gifts__example {
+  display: block;
+  margin-top: 4px;
+  color: #795232;
+  font-size: 11px;
+}
+.wedding-gifts__copy { position: relative; }
+.wedding-gifts__copy button {
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: #eeefe7;
+  color: #49583e;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .wedding-gifts__copy button:hover { background: #e1e6d9; }
+}
+.wedding-gifts__status {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: calc(100% + 7px);
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #49583e;
+  color: #fff;
+  font-size: 11px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.wedding-gifts__status:empty { padding: 0; }
+.wedding-gifts__status:not(:empty)::after {
+  position: absolute;
+  top: 100%;
+  right: 17px;
+  content: '';
+  border: 5px solid transparent;
+  border-top-color: #49583e;
+}
